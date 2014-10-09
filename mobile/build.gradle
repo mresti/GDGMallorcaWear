@@ -21,12 +21,14 @@ android {
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
     }
-
 }
 
 dependencies {
-    compile fileTree(dir: '../libs', include: ['*.jar'])
-    wearApp project(':wear')
-    compile 'com.google.android.gms:play-services-wearable:+'
-    compile 'com.android.support:support-v4:20.0.0'
-}
+    dependencies {
+        compile fileTree(dir: '../libs', include: ['*.jar'])
+        wearApp project(':wear')
+        compile 'com.google.android.gms:play-services:5.0.89'
+        compile 'com.android.support:support-v4:20.0.0'
+    }
+
+ }

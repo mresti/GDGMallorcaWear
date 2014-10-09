@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gdgmallorcawear">
 
+    <uses-feature android:name="android.hardware.type.watch" />
+
     <uses-sdk
         android:minSdkVersion="20"
         android:targetSdkVersion="20" />
@@ -25,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <action android:name="ccom.gdgmallorcawea.datalayer.START" />
+                <action android:name="com.gdgmallorcawear.datalayer.START" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
           </activity>
